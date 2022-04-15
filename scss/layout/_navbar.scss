@@ -1,0 +1,122 @@
+@use "../abstracts" as *;
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    background-color: $white;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    list-style-type: none;
+    padding: 40px 0;
+    // For Toggle
+    transform: translate(-50%, -200%);
+    transition: transform 0.6s ease-out;
+
+    li {
+      text-align: center;
+      padding: 22px 0;
+      font-size: 1.2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $darkGrayishBlue;
+      display: inline-block;
+
+      &:hover {
+        filter: brightness(90%);
+        transform: scale(1.1);
+      }
+    }
+
+    a.btn {
+      display: inline-block;
+      background-color: $yellow;
+      color: $veryDarkDesaturatedBlue;
+      text-transform: uppercase;
+      font-weight: $semiBold;
+      padding: 22px 30px;
+      border-radius: 30px;
+
+      &:hover {
+        filter: brightness(95%);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-bottom: 25px solid $white;
+      border-left: 25px solid transparent;
+      right: 0px;
+      top: -25px;
+      z-index: 10;
+    }
+  }
+
+  .nav-menu.toggle {
+    transform: translate(-50%, 0);
+  }
+}
+
+@include desktop {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 40px;
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0;
+      background-color: transparent;
+      position: relative;
+      padding: 0;
+      height: auto;
+      max-height: 200px;
+      top: initial;
+      left: initial;
+      transform: translateX(0);
+      width: 80%;
+      list-style-type: none;
+      transition: none;
+
+      li {
+        margin-left: 40px;
+      }
+
+      a {
+        color: $white;
+      }
+
+      a.btn {
+        background-color: $white;
+        transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
+
+        &:hover {
+          filter: initial;
+          background-color: #70cefe;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
