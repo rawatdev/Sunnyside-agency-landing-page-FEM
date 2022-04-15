@@ -7,11 +7,12 @@
   font-family: "Barlow", sans-serif;
 
   .logo {
-    font-weight: $semiBold;
+    font-weight: $black;
     color: $darkDesaturatedCyan;
-    margin-top: 0px;
     margin-bottom: 32px;
     text-align: center;
+    opacity: 0.85;
+    letter-spacing: 1px;
   }
 
   ul {
