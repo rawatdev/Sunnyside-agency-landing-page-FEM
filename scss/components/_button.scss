@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.btn {
+  border: none;
+  padding: 8px 16px;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.btn-link {
+  position: relative;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: "Fraunces";
+  font-weight: $black;
+  font-size: 1.2rem;
+  color: $veryDarkDesaturatedBlue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    width: 95%;
+    height: 12px;
+    border-radius: 20px;
+    background-color: $yellow;
+    opacity: 0.4;
+    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}

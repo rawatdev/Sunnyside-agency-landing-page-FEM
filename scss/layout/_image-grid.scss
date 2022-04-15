@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .image-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

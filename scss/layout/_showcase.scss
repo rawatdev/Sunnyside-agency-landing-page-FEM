@@ -1,0 +1,93 @@
+@use "../abstracts" as *;
+
+.showcase {
+  width: 100%;
+}
+
+.showcase-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .showcase-img {
+    flex: 1;
+    width: 100%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card {
+    flex: 1;
+  }
+}
+
+.image-text-block {
+  display: flex;
+  flex-direction: column;
+
+  .image-with-text {
+    position: relative;
+    width: 100%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .text-on-image {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+  }
+
+  .text-on-image--graphic {
+    .card-title,
+    .card-text {
+      color: $darkDesaturatedCyan;
+    }
+  }
+
+  .text-on-image--photography {
+    .card-title,
+    .card-text {
+      color: $darkBlue;
+    }
+  }
+}
+
+@include tablet {
+  // TODO: Write media query for tablet
+}
+
+@include desktop {
+  .showcase-block {
+    flex-direction: row;
+  }
+
+  .card-transform {
+    order: -1;
+  }
+
+  .card-standout {
+    order: 1;
+  }
+
+  .image-text-block {
+    flex-direction: row;
+
+    .text-on-image {
+      bottom: -20px;
+    }
+
+    .text-on-image--photography {
+      bottom: 0px;
+      color: #fff;
+    }
+  }
+}

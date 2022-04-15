@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.card-body {
+  padding: 50px 30px;
+  .card-title {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: $bold;
+    color: $veryDarkDesaturatedBlue;
+  }
+
+  .card-text {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $grayishBlue;
+  }
+}
+
+@include desktop {
+  .card-body {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
