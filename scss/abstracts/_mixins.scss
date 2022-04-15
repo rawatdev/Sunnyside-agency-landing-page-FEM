@@ -2,8 +2,8 @@
 
 $breakpoints: (
   "mobile": 0,
-  "tablet": 500px,
-  "desktop": 876px,
+  "tablet": 576px,
+  "desktop": 992px,
 );
 
 @mixin tablet {

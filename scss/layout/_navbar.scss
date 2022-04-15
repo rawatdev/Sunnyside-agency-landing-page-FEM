@@ -101,9 +101,11 @@
 
       a {
         color: $white;
+        font-family: "Barlow", sans-serif;
       }
 
       a.btn {
+        font-family: "Fraunces", sans-serif;
         background-color: $white;
         transition: background-color 0.4s ease-in-out, color 0.1s ease-in-out;
 

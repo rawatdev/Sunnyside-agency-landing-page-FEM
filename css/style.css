@@ -365,7 +365,7 @@ header .cta-section {
   letter-spacing: 8px;
   color: hsl(0deg, 0%, 100%);
   font-family: "Fraunces", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 header .cta-section .cta {
   margin-top: 8%;
@@ -376,9 +376,12 @@ header .cta-section .cta:active {
   transform: translateY(10px);
 }
 
-@media (min-width: 876px) {
+@media (min-width: 992px) {
   header {
     background: url("../../images/desktop/image-header.jpg") no-repeat center center/cover;
+  }
+  header .cta-section {
+    font-size: 1.8rem;
   }
   header .cta-section .cta {
     margin-top: 0%;
@@ -447,7 +450,7 @@ header .cta-section .cta:active {
   transform: translate(-50%, 0);
 }
 
-@media (min-width: 876px) {
+@media (min-width: 992px) {
   .navbar {
     justify-content: space-between;
     padding: 0 40px;
@@ -474,8 +477,10 @@ header .cta-section .cta:active {
   }
   .navbar .nav-menu a {
     color: hsl(0deg, 0%, 100%);
+    font-family: "Barlow", sans-serif;
   }
   .navbar .nav-menu a.btn {
+    font-family: "Fraunces", sans-serif;
     background-color: hsl(0deg, 0%, 100%);
     transition: background-color 0.4s ease-in-out, color 0.1s ease-in-out;
   }
@@ -538,7 +543,16 @@ header .cta-section .cta:active {
   color: hsl(198deg, 62%, 26%);
 }
 
-@media (min-width: 876px) {
+@media (min-width: 576px) {
+  .image-text-block .text-on-image {
+    bottom: 40px;
+  }
+  .image-text-block .text-on-image--photography {
+    bottom: 60px;
+    color: #fff;
+  }
+}
+@media (min-width: 992px) {
   .showcase-block {
     flex-direction: row;
   }
@@ -603,18 +617,27 @@ header .cta-section .cta:active {
   color: hsl(210deg, 4%, 67%);
 }
 
-@media (min-width: 876px) {
+@media (min-width: 576px) {
+  .testimonials-list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   .testimonials {
-    padding: 150px 160px;
-    font-size: 18px;
+    padding: 20px 10px;
+    font-size: 14px;
   }
   .testimonials > *:not(:last-child) {
     margin-bottom: 60px;
   }
-
-  .testimonials-list {
-    flex-direction: row;
-    align-items: center;
+}
+@media (min-width: 992px) {
+  .testimonials {
+    padding: 80px 60px;
+    font-size: 18px;
+  }
+  .testimonials > *:not(:last-child) {
+    margin-bottom: 60px;
   }
 }
 .image-grid {
@@ -626,7 +649,7 @@ header .cta-section .cta:active {
   width: 100%;
 }
 
-@media (min-width: 876px) {
+@media (min-width: 992px) {
   .image-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -675,7 +698,7 @@ header .cta-section .cta:active {
   font-size: 16px;
 }
 
-@media (min-width: 876px) {
+@media (min-width: 992px) {
   .footer {
     padding: 50px 0;
   }
@@ -742,10 +765,9 @@ header .cta-section .cta:active {
   color: hsl(210deg, 4%, 67%);
 }
 
-@media (min-width: 876px) {
+@media (min-width: 992px) {
   .card-body {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0 50px;
   }
 }
 .attribution {

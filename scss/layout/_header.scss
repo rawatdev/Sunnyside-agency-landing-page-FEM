@@ -13,7 +13,7 @@ header {
     letter-spacing: 8px;
     color: $white;
     font-family: "Fraunces", sans-serif;
-    font-size: 2rem;
+    font-size: 1.4rem;
 
     .cta {
       margin-top: 8%;
@@ -32,6 +32,7 @@ header {
     background: url("../../images/desktop/image-header.jpg") no-repeat center center / cover;
 
     .cta-section {
+      font-size: 1.8rem;
       .cta {
         margin-top: 0%;
       }

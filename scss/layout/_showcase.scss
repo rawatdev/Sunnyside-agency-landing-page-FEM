@@ -62,7 +62,16 @@
 }
 
 @include tablet {
-  // TODO: Write media query for tablet
+  .image-text-block {
+    .text-on-image {
+      bottom: 40px;
+    }
+
+    .text-on-image--photography {
+      bottom: 60px;
+      color: #fff;
+    }
+  }
 }
 
 @include desktop {
