@@ -3,7 +3,7 @@
 header {
   width: 100%;
   height: 100vh;
-  background: url("../../images/mobile/image-header.jpg") no-repeat center center / cover;
+  background: url("./../images/mobile/image-header.jpg") no-repeat center center / cover;
 
   .cta-section {
     width: 100%;
@@ -29,7 +29,7 @@ header {
 
 @include desktop {
   header {
-    background: url("../../images/desktop/image-header.jpg") no-repeat center center / cover;
+    background: url("./../images/desktop/image-header.jpg") no-repeat center center / cover;
 
     .cta-section {
       font-size: 1.8rem;
