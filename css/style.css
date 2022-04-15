@@ -569,10 +569,10 @@ header .cta-section .cta:active {
     flex-direction: row;
   }
   .image-text-block .text-on-image {
-    bottom: -20px;
+    bottom: 30px;
   }
   .image-text-block .text-on-image--photography {
-    bottom: 0px;
+    bottom: 35px;
     color: #fff;
   }
 }
