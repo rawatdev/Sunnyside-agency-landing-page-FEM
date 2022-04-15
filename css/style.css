@@ -631,6 +631,58 @@ header .cta-section .cta:active {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.footer {
+  background-color: #90d4c5;
+  color: hsl(168deg, 34%, 41%);
+  padding: 50px 30px;
+  font-family: "Barlow", sans-serif;
+}
+.footer .logo {
+  font-weight: 600;
+  color: hsl(167deg, 40%, 24%);
+  margin-top: 0px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .footer-nav,
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-nav {
+  margin-bottom: 68px;
+}
+.footer .footer-nav li {
+  margin-right: 44px;
+}
+.footer .social-links li {
+  margin-right: 20px;
+}
+.footer .social-links li a i {
+  font-size: 16px;
+}
+
+@media (min-width: 876px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer .social-links li a i {
+    font-size: 20px;
+  }
+}
 .btn {
   border: none;
   padding: 8px 16px;
@@ -697,8 +749,12 @@ header .cta-section .cta:active {
   }
 }
 .attribution {
-  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
   text-align: center;
+  height: 40px;
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
